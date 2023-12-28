@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <main class="container">
         <section class="sigin-signup">
             <form action="register.php" class="sign-in-form" method="post">
                 <h2 class="title">Sign in</h2>
@@ -36,6 +36,9 @@
                         <i class="ri-linkedin-fill"></i>
                     </a>
                 </div>
+                <p class="account-text">Don't have an account?
+                    <a href="#" id="sign-up-btn2">Sign up</a>
+                </p>
             </form>
             <form action="register.php" class="sign-up-form" method="post">
                 <h2 class="title">Sign up</h2>
@@ -67,6 +70,9 @@
                         <i class="ri-linkedin-fill"></i>
                     </a>
                 </div>
+                <p class="account-text">Already have an account?
+                    <a href="#" id="sign-in-btn2">Sign in</a>
+                </p>
             </form>
         </section>
         <section class="panels-container">
@@ -74,19 +80,20 @@
                 <div class="content">
                     <h3>Member of Brand?</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, laborum similique molestias sint eum?</p>
-                    <button class="btn">Sign in</button>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
                 </div>
-                <img src="images/undraw_access_account_re_8spm.svg" alt="" class="image">
+                <img src="images/undraw_login_re_4vu2.svg" alt="" class="image">
             </div>
             <div class="panel right-panel">
                 <div class="content">
                     <h3>New to Brand?</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, qui neque porro laborum similique molestias sint eum?</p>
-                    <button class="btn">Sign up</button>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
                 </div>
                 <img src="images/undraw_sign_up_n6im.svg" alt="" class="image">
             </div>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
