@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Slideshow</title>
 </head>
 <body>
     <main class="content">
-        
+        <div class="slides">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+
+            <div class="slide s1">
+                <img src="images/img01.jpg" alt="Foto de dentro da biblioteca de Porto-PT">
+            </div>
+            <div class="slide">
+                <img src="images/img02.jpg" alt="Fotografia de livros antigos com uma xícara de chá, biscoitos e um óculos">
+            </div>
+            <div class="slide">
+                <img src="images/img03.jpg" alt="Imagem de dados com letras desenhadas, formando a palavra 'Study'">
+            </div>
+            <div class="slide">
+                <img src="images/img04.jpg" alt="Fotografia de uma xícara de chá em cima de uma pano branco com flores ao lado e dois livros abertos">
+            </div>
+            <div class="slide">
+                <img src="images/img05.jpg" alt="Fotografia de prateleira cheia de livros">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label class="barra" for="slide1"></label>
+            <label class="barra" for="slide2"></label>
+            <label class="barra" for="slide3"></label>
+            <label class="barra" for="slide4"></label>
+            <label class="barra" for="slide5"></label>
+        </div>
+
     </main>
 </body>
 </html>
