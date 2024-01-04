@@ -1,0 +1,38 @@
+body {
+    font-family: monospace;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+.container {
+    border: 1px solid #838383;
+    max-width: 500px;
+    margin: 0 auto; /*Centraliza o container na página*/
+    display: flex;
+}
+.item {
+    background: tomato;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+}
+.row {
+    flex-direction: row;
+    /*Os itens ficam em linha*/
+}
+.row-reverse{
+    flex-direction: row-reverse;
+    /*Os itens ficam em linha reversa, ou seja 3, 2, 1*/
+}
+.column{
+    flex-direction: column;
+    /*Os itens ficam em uma única coluna, um embaixo do outro*/
+}
+.column-reverse{
+    flex-direction: column-reverse;
+    /*Os itens ficam em uma única coluna, um embaixo do outro, porém em ordem reversa: 3, 2 e 1*/
+}

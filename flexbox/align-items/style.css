@@ -1,0 +1,57 @@
+body {
+    font-family: monospace;
+}
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+}
+.container {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.item {
+    background: tomato;
+    flex: 1;
+    margin: 5px;
+    padding: 0 10px;
+    font-size: 1.5em;
+}
+.item:first-child {
+    padding-top: 20px;
+}
+.column {
+    flex-direction: column;
+}
+.stretch {
+    align-items: stretch;
+    /*Valor padrão, ele que faz com que os flex itens cresçam igualmente*/
+}
+.flex-start {
+    align-items: flex-start;
+    /*Alinha os itens ao início*/
+}
+.flex-end {
+    align-items: flex-end;
+    /*Alinha os itens ao final*/
+}
+.center {
+    align-items: center;
+    /*Alinha os itens ao centro*/
+}
+.baseline {
+    align-items: baseline;
+    /*Alinha os itens de acordo com a linha base da tipografia*/
+}
+
+.alinhamento-central {
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+.alinhamento-central .item {
+    padding: 10px;
+    flex: 0;
+}

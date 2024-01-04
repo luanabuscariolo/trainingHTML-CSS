@@ -1,0 +1,33 @@
+body {
+    font-family: monospace;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+}
+.container {
+    margin: 0 auto;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    display: flex;
+}
+.item {
+    text-align: center;
+    font-size: 1.5em;
+    background: tomato;
+    margin: 5px;
+    flex: 1;
+}
+.row-nowrap {
+	flex-flow: row nowrap;
+    /*Coloca o conteúdo em linha e não permite a quebra de linha*/
+}
+.row-wrap {
+	flex-flow: row wrap;
+    /*Coloca o conteúdo em linha e permite a quebra de linha*/
+}
+.column-nowrap {
+	flex-flow: column nowrap;
+    /*Coloca o conteúdo em coluna e não permite a quebra de linha*/
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: monospace;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+}
+.container {
+    margin: 0 auto;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    display: flex;
+}
+.item {
+    text-align: center;
+    font-size: 1.5em;
+    background: tomato;
+    margin: 5px;
+    flex: 1;
+}
+.nowrap {
+    flex-wrap: nowrap;
+    /*Valor padrão, não permite a quebra de linha*/
+}
+.wrap {
+    flex-wrap: wrap;
+    /*Quebra a linha assim que um dos flex itens não puder mais ser compactado*/
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+    /*Quebra a linha assim que um dos flex itens não puder mais ser compactado. A quebra é na direção contrária, ou seja para a linha acima*/
+}

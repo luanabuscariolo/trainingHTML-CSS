@@ -1,0 +1,48 @@
+/*
+display: flex; --> Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.
+*/
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: 800;
+}
+.container {
+    border: 2px solid black;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* 
+flex: 1; é uma maneira de fazer com que um item em um contêiner flexível ocupe todo o espaço disponível em termos de largura ou altura, dependendo da orientação do contêiner.
+
+flex: [flex-grow], [flex-shrink], [flex-basis]
+
+Flex é a forma resumida das três propriedades anteriores.
+Sendo por padrão (caso nenhuma das três propriedades sejam definidas):
+
+flex: 0, 1, auto;
+*/
+.flex-item-1 {
+    flex: 1;
+}
