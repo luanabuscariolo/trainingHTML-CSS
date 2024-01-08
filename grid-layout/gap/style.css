@@ -1,30 +1,47 @@
 /*
-Atalho para definir o grid-template-columns, grid-template-rows e grid-template-areas.
+Define o gap (gutter) entre os elementos do grid.
 
-grid-template:
-"logo nav nav" 50px
-"sidenav content advert" 150px
-"sidenav footer footer" 100px
-/ 100px 1fr 50px;
+gap: 20px
+// Define 20px entre os elementos do grid (linha e coluna).
 
-// A primeira linha com 50px, segunda com 150px e terceira com 100px. A primeira coluna com 100px, a segunda 1fr e a terceira com 50px.
+column-gap: 20px
+// Define 20px de distância entre as colunas.
+
+row-gap: 20px
+// Define 20px de distância entre as linhas.
+
 */
 
 /* Grid */
 .grid {
 	display: grid;
 }
-
-.grid-template-1 {
-	grid-template: 50px 1fr / 100px 1fr 100px;
+.grid-template {
+	grid-template:
+		"logo nav nav" 50px
+		"sidenav content advert" 150px
+		"sidenav footer footer" 100px
+		/ 100px 1fr 50px;
 }
 
-.grid-template-2 {
-	grid-template:
-		"logo nav nav" 70px
-		"sidenav content advert" 250px
-		"sidenav footer footer" 50px
-		/ 100px 1fr 60px;
+.gap {
+	gap: 20px 10px;
+}
+
+.column-gap {
+	gap: 2px;
+	column-gap: 20px;
+}
+
+.row-gap {
+	gap: 2px;
+	row-gap: 20px;
+}
+
+.margin {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 50px;
 }
 
 .logo {
@@ -53,7 +70,6 @@ grid-template:
 
 /* Grid Item */
 .item {
-	margin: 5px;
 	background: tomato;
 	text-align: center;
 	font-size: 1.5em;

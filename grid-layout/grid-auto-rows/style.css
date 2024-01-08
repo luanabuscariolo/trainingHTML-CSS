@@ -1,31 +1,28 @@
 /*
-Atalho para definir o grid-template-columns, grid-template-rows e grid-template-areas.
+Define o tamanho das linhas do grid implícito (gerado automaticamente, quando algum elemento é posicionado em uma linha que não foi definida).
 
-grid-template:
-"logo nav nav" 50px
-"sidenav content advert" 150px
-"sidenav footer footer" 100px
-/ 100px 1fr 50px;
-
-// A primeira linha com 50px, segunda com 150px e terceira com 100px. A primeira coluna com 100px, a segunda 1fr e a terceira com 50px.
+grid-auto-rows: 100px
+// As linhas implícitas, geradas automaticamente, terão 100px de altura.
 */
-
 /* Grid */
 .grid {
 	display: grid;
 }
 
-.grid-template-1 {
-	grid-template: 50px 1fr / 100px 1fr 100px;
+.grid-auto-rows-1 {
+	grid-template-rows: 1fr 1fr;
+	grid-auto-rows: 100px;
 }
 
-.grid-template-2 {
+.grid-auto-rows-2 {
 	grid-template:
-		"logo nav nav" 70px
-		"sidenav content advert" 250px
-		"sidenav footer footer" 50px
-		/ 100px 1fr 60px;
+		"logo nav nav" 50px
+		"sidenav content advert" 150px
+		"sidenav footer footer" 100px
+		/ 100px 1fr 50px;
+	grid-auto-rows: 40px 100px;
 }
+
 
 .logo {
 	grid-area: logo;
