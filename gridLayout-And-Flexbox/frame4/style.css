@@ -46,19 +46,5 @@ img {
     padding: 10px;
 }
 
-/* CSS Flexbox 1 */
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.flex > div {
-    flex: 1 1 200px;
-    margin: 10px;
-}
-
-/* CSS GRID 1 */
+/* CSS GRID */
 
